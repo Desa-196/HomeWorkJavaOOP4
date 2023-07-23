@@ -15,21 +15,16 @@
 public class Main {
     public static void main(String[] args) throws Exception {
         DataContainer<String> dataContainer = new DataContainer<>();
-        dataContainer.add("Один");
-        dataContainer.add("Два");
-        dataContainer.add("Три");
-        dataContainer.add("Три");
-        dataContainer.add("Три");
-        dataContainer.add("Три");
-        dataContainer.add("Три");
-        dataContainer.add("Три");
-        dataContainer.add("Три");
-        dataContainer.add("Три");
-        dataContainer.add("Три");
-        dataContainer.add("Три");
-        dataContainer.add("Три");
-        dataContainer.add("Три");
-        dataContainer.add("Три");
-        System.out.println(dataContainer.get(4));
+        dataContainer.add("1");
+        dataContainer.add("11");
+        dataContainer.add("111");
+        dataContainer.add("11111");
+        dataContainer.add("1111");
+        dataContainer.add("1111111");
+        dataContainer.add("11111");
+        dataContainer.add("111111");
+        System.out.println(dataContainer);
+        dataContainer.sort(((x, y) -> x.length() - y.length()));
+        System.out.println(dataContainer);
     }
 }
