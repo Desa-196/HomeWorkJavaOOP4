@@ -23,8 +23,16 @@ public class Main {
         dataContainer.add("1111111");
         dataContainer.add("11111");
         dataContainer.add("111111");
+        dataContainer.add("1111111111");
+        dataContainer.add("1111111111111");
+        dataContainer.add("1111111111");
+        dataContainer.add("1111111111");
+        dataContainer.add("111111111111");
+        dataContainer.add("1111111");
+        dataContainer.add("1111111111111111");
+        dataContainer.add("111111");
         System.out.println(dataContainer);
-        dataContainer.sort(((x, y) -> x.length() - y.length()));
+        dataContainer.sort(((x, y) -> y.length() - x.length()));
         dataContainer.print();
     }
 }
