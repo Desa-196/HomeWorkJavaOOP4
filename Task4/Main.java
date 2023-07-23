@@ -13,7 +13,23 @@
  обеспечивая безопасность типов и гибкость в использовании.
  */
 public class Main {
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws Exception {
+        DataContainer<String> dataContainer = new DataContainer<>();
+        dataContainer.add("Один");
+        dataContainer.add("Два");
+        dataContainer.add("Три");
+        dataContainer.add("Три");
+        dataContainer.add("Три");
+        dataContainer.add("Три");
+        dataContainer.add("Три");
+        dataContainer.add("Три");
+        dataContainer.add("Три");
+        dataContainer.add("Три");
+        dataContainer.add("Три");
+        dataContainer.add("Три");
+        dataContainer.add("Три");
+        dataContainer.add("Три");
+        dataContainer.add("Три");
+        System.out.println(dataContainer.get(4));
     }
 }
