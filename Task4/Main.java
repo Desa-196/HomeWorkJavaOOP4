@@ -25,6 +25,6 @@ public class Main {
         dataContainer.add("111111");
         System.out.println(dataContainer);
         dataContainer.sort(((x, y) -> x.length() - y.length()));
-        System.out.println(dataContainer);
+        dataContainer.print();
     }
 }
